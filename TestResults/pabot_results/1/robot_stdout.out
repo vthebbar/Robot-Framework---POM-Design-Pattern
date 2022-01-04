@@ -1,0 +1,22 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.LoginTest DataDriven                                                   
+==============================================================================
+Data driven test using invalid login data                             | PASS |
+------------------------------------------------------------------------------
+Data driven test using invalid login data                             | PASS |
+------------------------------------------------------------------------------
+Data driven test using invalid login data                             | PASS |
+------------------------------------------------------------------------------
+Data driven test using invalid login data                             | PASS |
+------------------------------------------------------------------------------
+Data driven test using invalid login data                             | PASS |
+------------------------------------------------------------------------------
+Suites.LoginTest DataDriven                                           | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\PycharmProjects\RobotFramework-POM Pattern\TestResults\pabot_results\1\output.xml

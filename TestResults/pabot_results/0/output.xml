@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220104 20:33:22.010" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="C:\Users\user\PycharmProjects\RobotFramework-POM Pattern\TestCases\LoginTest.robot">
+<kw name="open app" library="LoginPageKeywords" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220104 20:33:22.297" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/index.php?route=account/login'.</msg>
+<status status="PASS" starttime="20220104 20:33:22.297" endtime="20220104 20:33:27.339"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220104 20:33:27.340" endtime="20220104 20:33:27.465"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:22.297" endtime="20220104 20:33:27.466"/>
+</kw>
+<test id="s1-s1-t1" name="ValidLoginTest">
+<kw name="input useremail" library="LoginPageKeywords">
+<arg>${useremail}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_emailid}</arg>
+<arg>${useremail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:27.469" level="INFO">Typing text 'testrobot@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:33:27.468" endtime="20220104 20:33:27.661"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:27.468" endtime="20220104 20:33:27.662"/>
+</kw>
+<kw name="input password" library="LoginPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:27.663" level="INFO">Typing text '1234' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:33:27.662" endtime="20220104 20:33:27.766"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:27.662" endtime="20220104 20:33:27.767"/>
+</kw>
+<kw name="click login" library="LoginPageKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:27.770" level="INFO">Clicking button 'xpath://input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220104 20:33:27.769" endtime="20220104 20:33:30.465"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:27.767" endtime="20220104 20:33:30.465"/>
+</kw>
+<kw name="verify successful login" library="LoginPageKeywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${login_page_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220104 20:33:30.472" level="INFO">Page title is 'My Account'.</msg>
+<status status="PASS" starttime="20220104 20:33:30.467" endtime="20220104 20:33:30.473"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login Successful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220104 20:33:30.475" level="INFO">Login Successful</msg>
+<status status="PASS" starttime="20220104 20:33:30.473" endtime="20220104 20:33:30.475"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:30.465" endtime="20220104 20:33:30.476"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220104 20:33:30.476" endtime="20220104 20:33:30.488"/>
+</kw>
+<kw name="click logout link" library="LoginPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:30.489" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:33:30.489" endtime="20220104 20:33:30.533"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:30.534" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:33:30.533" endtime="20220104 20:33:32.950"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:30.489" endtime="20220104 20:33:32.951"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:27.466" endtime="20220104 20:33:32.951"/>
+</test>
+<test id="s1-s1-t2" name="Verify Forgot Password Link">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:33:32.955" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/login'</msg>
+<status status="PASS" starttime="20220104 20:33:32.954" endtime="20220104 20:33:34.468"/>
+</kw>
+<kw name="click forgot password link" library="LoginPageKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${link_forgotpassword}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:34.471" level="INFO">Clicking link 'xpath://div[@class='form-group']//a[text()='Forgotten Password']'.</msg>
+<status status="PASS" starttime="20220104 20:33:34.470" endtime="20220104 20:33:35.757"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:34.469" endtime="20220104 20:33:35.758"/>
+</kw>
+<kw name="verify forgot password link navigation" library="LoginPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Forgot Your Password?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:33:35.784" level="INFO">Current page contains text 'Forgot Your Password?'.</msg>
+<status status="PASS" starttime="20220104 20:33:35.762" endtime="20220104 20:33:35.785"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:35.759" endtime="20220104 20:33:35.786"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:32.951" endtime="20220104 20:33:35.786"/>
+</test>
+<kw name="close app" library="LoginPageKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220104 20:33:35.788" endtime="20220104 20:33:37.945"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:35.788" endtime="20220104 20:33:37.945"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:22.073" endtime="20220104 20:33:37.945"/>
+</suite>
+<status status="PASS" starttime="20220104 20:33:22.042" endtime="20220104 20:33:37.945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="LoginTest">Suites.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

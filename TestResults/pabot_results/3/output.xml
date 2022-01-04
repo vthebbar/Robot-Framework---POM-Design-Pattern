@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220104 20:33:39.000" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="RegistrationTest DataDriven" source="C:\Users\user\PycharmProjects\RobotFramework-POM Pattern\TestCases\RegistrationTest_DataDriven.robot">
+<kw name="open app" library="RegistrationPageKeywords" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220104 20:33:40.072" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/index.php?route=account/register'.</msg>
+<status status="PASS" starttime="20220104 20:33:40.072" endtime="20220104 20:33:44.843"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220104 20:33:44.844" endtime="20220104 20:33:44.973"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:40.072" endtime="20220104 20:33:44.974"/>
+</kw>
+<test id="s1-s1-t1" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj1</arg>
+<arg>Kumar1</arg>
+<arg>shiv222@gmail.com</arg>
+<arg>9876012345</arg>
+<arg>abc@123</arg>
+<arg>abc@123</arg>
+<arg>1</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.978" level="INFO">Typing text 'Raj1' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.978" endtime="20220104 20:33:45.091"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.977" endtime="20220104 20:33:45.091"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.093" level="INFO">Typing text 'Kumar1' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.092" endtime="20220104 20:33:45.177"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.091" endtime="20220104 20:33:45.178"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.179" level="INFO">Typing text 'shiv222@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.179" endtime="20220104 20:33:45.317"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.178" endtime="20220104 20:33:45.317"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.319" level="INFO">Typing text '9876012345' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.318" endtime="20220104 20:33:45.425"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.317" endtime="20220104 20:33:45.426"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.427" level="INFO">Typing text 'abc@123' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.427" endtime="20220104 20:33:45.512"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.426" endtime="20220104 20:33:45.512"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.514" level="INFO">Typing text 'abc@123' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.513" endtime="20220104 20:33:45.590"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.512" endtime="20220104 20:33:45.590"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:33:45.591" level="INFO">Selecting '1' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.591" endtime="20220104 20:33:45.649"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.590" endtime="20220104 20:33:45.650"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.652" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.651" endtime="20220104 20:33:45.722"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.650" endtime="20220104 20:33:45.722"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.723" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.723" endtime="20220104 20:33:48.744"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.722" endtime="20220104 20:33:48.744"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:33:48.761" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:33:48.744" endtime="20220104 20:33:48.761"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:48.744" endtime="20220104 20:33:48.761"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:48.762" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:33:48.762" endtime="20220104 20:33:48.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:48.813" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:33:48.813" endtime="20220104 20:33:51.391"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:48.761" endtime="20220104 20:33:51.392"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:33:51.394" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:33:51.392" endtime="20220104 20:33:52.977"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.976" endtime="20220104 20:33:52.977"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.974" endtime="20220104 20:33:52.977"/>
+</test>
+<test id="s1-s1-t2" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj2</arg>
+<arg>Kumar2</arg>
+<arg>shiv223@gmail.com</arg>
+<arg>9876012346</arg>
+<arg>abc@124</arg>
+<arg>abc@124</arg>
+<arg>0</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:52.985" level="INFO">Typing text 'Raj2' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:33:52.985" endtime="20220104 20:33:53.066"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:52.984" endtime="20220104 20:33:53.067"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.068" level="INFO">Typing text 'Kumar2' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.068" endtime="20220104 20:33:53.146"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.067" endtime="20220104 20:33:53.147"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.148" level="INFO">Typing text 'shiv223@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.147" endtime="20220104 20:33:53.232"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.147" endtime="20220104 20:33:53.233"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.234" level="INFO">Typing text '9876012346' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.233" endtime="20220104 20:33:53.313"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.233" endtime="20220104 20:33:53.314"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.315" level="INFO">Typing text 'abc@124' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.315" endtime="20220104 20:33:53.389"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.314" endtime="20220104 20:33:53.389"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.390" level="INFO">Typing text 'abc@124' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.390" endtime="20220104 20:33:53.464"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.389" endtime="20220104 20:33:53.465"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:33:53.467" level="INFO">Selecting '0' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.466" endtime="20220104 20:33:53.489"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.465" endtime="20220104 20:33:53.489"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.490" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.490" endtime="20220104 20:33:53.567"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.489" endtime="20220104 20:33:53.567"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:53.569" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:33:53.568" endtime="20220104 20:33:56.407"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:53.567" endtime="20220104 20:33:56.408"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:33:56.425" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:33:56.409" endtime="20220104 20:33:56.425"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:56.408" endtime="20220104 20:33:56.425"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:56.426" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:33:56.426" endtime="20220104 20:33:56.465"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:56.466" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:33:56.465" endtime="20220104 20:33:58.853"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:56.425" endtime="20220104 20:33:58.853"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:33:58.854" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:33:58.854" endtime="20220104 20:34:00.068"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:52.981" endtime="20220104 20:34:00.069"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:52.978" endtime="20220104 20:34:00.069"/>
+</test>
+<test id="s1-s1-t3" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj3</arg>
+<arg>Kumar3</arg>
+<arg>shiv224@gmail.com</arg>
+<arg>9876012347</arg>
+<arg>abc@125</arg>
+<arg>abc@125</arg>
+<arg>1</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.076" level="INFO">Typing text 'Raj3' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.073" endtime="20220104 20:34:00.160"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.072" endtime="20220104 20:34:00.160"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.161" level="INFO">Typing text 'Kumar3' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.161" endtime="20220104 20:34:00.240"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.160" endtime="20220104 20:34:00.240"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.241" level="INFO">Typing text 'shiv224@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.241" endtime="20220104 20:34:00.328"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.240" endtime="20220104 20:34:00.328"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.329" level="INFO">Typing text '9876012347' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.329" endtime="20220104 20:34:00.408"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.328" endtime="20220104 20:34:00.409"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.410" level="INFO">Typing text 'abc@125' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.409" endtime="20220104 20:34:00.486"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.409" endtime="20220104 20:34:00.487"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.488" level="INFO">Typing text 'abc@125' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.487" endtime="20220104 20:34:00.565"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.487" endtime="20220104 20:34:00.566"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:00.567" level="INFO">Selecting '1' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.567" endtime="20220104 20:34:00.635"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.566" endtime="20220104 20:34:00.636"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.637" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.637" endtime="20220104 20:34:00.705"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.636" endtime="20220104 20:34:00.705"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:00.706" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:00.706" endtime="20220104 20:34:03.119"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.705" endtime="20220104 20:34:03.120"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:03.132" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:03.120" endtime="20220104 20:34:03.132"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:03.120" endtime="20220104 20:34:03.132"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:03.134" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:03.133" endtime="20220104 20:34:03.174"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:03.175" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:03.174" endtime="20220104 20:34:05.335"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:03.132" endtime="20220104 20:34:05.335"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:05.338" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:05.336" endtime="20220104 20:34:06.559"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.072" endtime="20220104 20:34:06.560"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:00.070" endtime="20220104 20:34:06.560"/>
+</test>
+<test id="s1-s1-t4" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj4</arg>
+<arg>Kumar4</arg>
+<arg>shiv225@gmail.com</arg>
+<arg>9876012348</arg>
+<arg>abc@126</arg>
+<arg>abc@126</arg>
+<arg>0</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.568" level="INFO">Typing text 'Raj4' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.567" endtime="20220104 20:34:06.649"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.566" endtime="20220104 20:34:06.649"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.650" level="INFO">Typing text 'Kumar4' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.650" endtime="20220104 20:34:06.731"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.649" endtime="20220104 20:34:06.731"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.733" level="INFO">Typing text 'shiv225@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.732" endtime="20220104 20:34:06.817"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.732" endtime="20220104 20:34:06.817"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.818" level="INFO">Typing text '9876012348' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.818" endtime="20220104 20:34:06.899"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.817" endtime="20220104 20:34:06.899"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.900" level="INFO">Typing text 'abc@126' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.900" endtime="20220104 20:34:06.978"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.899" endtime="20220104 20:34:06.978"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:06.980" level="INFO">Typing text 'abc@126' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:06.979" endtime="20220104 20:34:07.058"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.978" endtime="20220104 20:34:07.058"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:07.059" level="INFO">Selecting '0' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:07.059" endtime="20220104 20:34:07.076"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:07.059" endtime="20220104 20:34:07.076"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:07.078" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:07.078" endtime="20220104 20:34:07.150"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:07.077" endtime="20220104 20:34:07.151"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:07.152" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:07.151" endtime="20220104 20:34:09.520"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:07.151" endtime="20220104 20:34:09.521"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:09.536" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:09.523" endtime="20220104 20:34:09.536"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:09.522" endtime="20220104 20:34:09.536"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:09.537" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:09.537" endtime="20220104 20:34:09.578"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:09.579" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:09.578" endtime="20220104 20:34:11.728"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:09.536" endtime="20220104 20:34:11.730"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:11.732" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:11.731" endtime="20220104 20:34:12.937"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.565" endtime="20220104 20:34:12.938"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:06.561" endtime="20220104 20:34:12.938"/>
+</test>
+<test id="s1-s1-t5" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj5</arg>
+<arg>Kumar5</arg>
+<arg>shiv226@gmail.com</arg>
+<arg>9876012349</arg>
+<arg>abc@127</arg>
+<arg>abc@127</arg>
+<arg>1</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:12.944" level="INFO">Typing text 'Raj5' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:12.942" endtime="20220104 20:34:13.026"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:12.941" endtime="20220104 20:34:13.027"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.029" level="INFO">Typing text 'Kumar5' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.029" endtime="20220104 20:34:13.107"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.027" endtime="20220104 20:34:13.107"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.108" level="INFO">Typing text 'shiv226@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.108" endtime="20220104 20:34:13.194"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.107" endtime="20220104 20:34:13.196"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.198" level="INFO">Typing text '9876012349' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.197" endtime="20220104 20:34:13.273"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.197" endtime="20220104 20:34:13.273"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.275" level="INFO">Typing text 'abc@127' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.274" endtime="20220104 20:34:13.353"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.274" endtime="20220104 20:34:13.353"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.355" level="INFO">Typing text 'abc@127' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.354" endtime="20220104 20:34:13.432"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.354" endtime="20220104 20:34:13.433"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:13.434" level="INFO">Selecting '1' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.434" endtime="20220104 20:34:13.500"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.433" endtime="20220104 20:34:13.500"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.501" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.501" endtime="20220104 20:34:13.570"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.500" endtime="20220104 20:34:13.570"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:13.571" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:13.571" endtime="20220104 20:34:16.508"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:13.570" endtime="20220104 20:34:16.508"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:16.522" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:16.509" endtime="20220104 20:34:16.522"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:16.509" endtime="20220104 20:34:16.522"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:16.524" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:16.523" endtime="20220104 20:34:16.564"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:16.565" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:16.565" endtime="20220104 20:34:19.014"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:16.523" endtime="20220104 20:34:19.014"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:19.017" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:19.014" endtime="20220104 20:34:20.588"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:12.940" endtime="20220104 20:34:20.588"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:12.939" endtime="20220104 20:34:20.588"/>
+</test>
+<test id="s1-s1-t6" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj6</arg>
+<arg>Kumar6</arg>
+<arg>shiv227@gmail.com</arg>
+<arg>9876012350</arg>
+<arg>abc@128</arg>
+<arg>abc@128</arg>
+<arg>1</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:20.599" level="INFO">Typing text 'Raj6' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:20.599" endtime="20220104 20:34:20.679"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.598" endtime="20220104 20:34:20.679"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:20.680" level="INFO">Typing text 'Kumar6' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:20.680" endtime="20220104 20:34:20.757"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.679" endtime="20220104 20:34:20.757"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:20.760" level="INFO">Typing text 'shiv227@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:20.759" endtime="20220104 20:34:20.852"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.758" endtime="20220104 20:34:20.852"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:20.853" level="INFO">Typing text '9876012350' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:20.853" endtime="20220104 20:34:20.931"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.852" endtime="20220104 20:34:20.931"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:20.932" level="INFO">Typing text 'abc@128' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:20.932" endtime="20220104 20:34:21.007"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.931" endtime="20220104 20:34:21.007"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:21.009" level="INFO">Typing text 'abc@128' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:21.008" endtime="20220104 20:34:21.089"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:21.008" endtime="20220104 20:34:21.089"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:21.090" level="INFO">Selecting '1' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:21.090" endtime="20220104 20:34:21.154"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:21.089" endtime="20220104 20:34:21.154"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:21.156" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:21.155" endtime="20220104 20:34:21.222"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:21.155" endtime="20220104 20:34:21.223"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:21.224" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:21.223" endtime="20220104 20:34:24.213"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:21.223" endtime="20220104 20:34:24.214"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:24.227" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:24.215" endtime="20220104 20:34:24.227"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:24.214" endtime="20220104 20:34:24.228"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:24.229" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:24.228" endtime="20220104 20:34:24.267"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:24.267" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:24.267" endtime="20220104 20:34:26.538"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:24.228" endtime="20220104 20:34:26.538"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:26.539" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:26.538" endtime="20220104 20:34:28.049"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.598" endtime="20220104 20:34:28.050"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:20.594" endtime="20220104 20:34:28.050"/>
+</test>
+<test id="s1-s1-t7" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj7</arg>
+<arg>Kumar7</arg>
+<arg>shiv228@gmail.com</arg>
+<arg>9876012351</arg>
+<arg>abc@129</arg>
+<arg>abc@129</arg>
+<arg>0</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.054" level="INFO">Typing text 'Raj7' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.054" endtime="20220104 20:34:28.136"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.053" endtime="20220104 20:34:28.136"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.137" level="INFO">Typing text 'Kumar7' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.137" endtime="20220104 20:34:28.216"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.136" endtime="20220104 20:34:28.216"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.217" level="INFO">Typing text 'shiv228@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.217" endtime="20220104 20:34:28.311"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.216" endtime="20220104 20:34:28.311"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.312" level="INFO">Typing text '9876012351' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.311" endtime="20220104 20:34:28.392"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.311" endtime="20220104 20:34:28.393"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.394" level="INFO">Typing text 'abc@129' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.393" endtime="20220104 20:34:28.467"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.393" endtime="20220104 20:34:28.467"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.469" level="INFO">Typing text 'abc@129' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.468" endtime="20220104 20:34:28.553"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.468" endtime="20220104 20:34:28.554"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:28.555" level="INFO">Selecting '0' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.554" endtime="20220104 20:34:28.578"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.554" endtime="20220104 20:34:28.579"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.580" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.579" endtime="20220104 20:34:28.662"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.579" endtime="20220104 20:34:28.663"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:28.664" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:28.664" endtime="20220104 20:34:31.230"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.663" endtime="20220104 20:34:31.231"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:31.246" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:31.232" endtime="20220104 20:34:31.246"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:31.231" endtime="20220104 20:34:31.247"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:31.247" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:31.247" endtime="20220104 20:34:31.290"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:31.291" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:31.290" endtime="20220104 20:34:34.079"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:31.247" endtime="20220104 20:34:34.081"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:34.082" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:34.081" endtime="20220104 20:34:35.337"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.053" endtime="20220104 20:34:35.338"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:28.051" endtime="20220104 20:34:35.338"/>
+</test>
+<test id="s1-s1-t8" name="Data Driven Test Registration">
+<kw name="Data Driven Registration">
+<arg>Raj8</arg>
+<arg>Kumar8</arg>
+<arg>shiv229@gmail.com</arg>
+<arg>9876012352</arg>
+<arg>abc@130</arg>
+<arg>abc@130</arg>
+<arg>0</arg>
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.346" level="INFO">Typing text 'Raj8' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.345" endtime="20220104 20:34:35.425"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.345" endtime="20220104 20:34:35.425"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.427" level="INFO">Typing text 'Kumar8' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.426" endtime="20220104 20:34:35.503"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.426" endtime="20220104 20:34:35.503"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.504" level="INFO">Typing text 'shiv229@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.504" endtime="20220104 20:34:35.589"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.503" endtime="20220104 20:34:35.589"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.590" level="INFO">Typing text '9876012352' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.590" endtime="20220104 20:34:35.668"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.589" endtime="20220104 20:34:35.668"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.669" level="INFO">Typing text 'abc@130' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.669" endtime="20220104 20:34:35.744"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.668" endtime="20220104 20:34:35.744"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.745" level="INFO">Typing text 'abc@130' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.745" endtime="20220104 20:34:35.820"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.744" endtime="20220104 20:34:35.820"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>${radioBtnValue}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:34:35.822" level="INFO">Selecting '0' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.821" endtime="20220104 20:34:35.840"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.821" endtime="20220104 20:34:35.840"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.843" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.842" endtime="20220104 20:34:35.928"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.840" endtime="20220104 20:34:35.929"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:35.932" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:34:35.930" endtime="20220104 20:34:38.675"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.929" endtime="20220104 20:34:38.675"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:34:38.692" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:34:38.677" endtime="20220104 20:34:38.693"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:38.676" endtime="20220104 20:34:38.694"/>
+</kw>
+<kw name="click logout link" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_MyAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:38.695" level="INFO">Clicking element 'xpath://span[text()='My Account']'.</msg>
+<status status="PASS" starttime="20220104 20:34:38.695" endtime="20220104 20:34:38.736"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:34:38.738" level="INFO">Clicking element 'xpath://li//a[text()='Logout']'.</msg>
+<status status="PASS" starttime="20220104 20:34:38.737" endtime="20220104 20:34:40.928"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:38.694" endtime="20220104 20:34:40.928"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220104 20:34:40.929" level="INFO">Opening url 'https://demo.opencart.com/index.php?route=account/register'</msg>
+<status status="PASS" starttime="20220104 20:34:40.929" endtime="20220104 20:34:42.175"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.344" endtime="20220104 20:34:42.175"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:35.339" endtime="20220104 20:34:42.176"/>
+</test>
+<kw name="close app" library="RegistrationPageKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220104 20:34:42.177" endtime="20220104 20:34:44.357"/>
+</kw>
+<status status="PASS" starttime="20220104 20:34:42.177" endtime="20220104 20:34:44.357"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:39.031" endtime="20220104 20:34:44.357"/>
+</suite>
+<status status="PASS" starttime="20220104 20:33:39.015" endtime="20220104 20:34:44.357"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="8" fail="0" skip="0" id="s1-s1" name="RegistrationTest DataDriven">Suites.RegistrationTest DataDriven</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220104 20:33:52.978" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:00.070" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:06.561" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:12.938" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:20.589" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:28.051" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+<msg timestamp="20220104 20:34:35.339" level="WARN">Multiple test cases with name 'Data Driven Test Registration' executed in test suite 'Suites.RegistrationTest DataDriven'.</msg>
+</errors>
+</robot>

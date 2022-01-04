@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.0 on win32)" generated="20220104 20:33:38.859" rpa="false" schemaversion="2">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="RegistrationTest" source="C:\Users\user\PycharmProjects\RobotFramework-POM Pattern\TestCases\RegistrationTest.robot">
+<kw name="open app" library="RegistrationPageKeywords" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220104 20:33:39.140" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/index.php?route=account/register'.</msg>
+<status status="PASS" starttime="20220104 20:33:39.140" endtime="20220104 20:33:44.217"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220104 20:33:44.217" endtime="20220104 20:33:44.339"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:39.140" endtime="20220104 20:33:44.339"/>
+</kw>
+<test id="s1-s1-t1" name="RegisterAccount">
+<kw name="input first name" library="RegistrationPageKeywords">
+<arg>${firstName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.341" level="INFO">Typing text 'Raj' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.341" endtime="20220104 20:33:44.470"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.340" endtime="20220104 20:33:44.470"/>
+</kw>
+<kw name="input last name" library="RegistrationPageKeywords">
+<arg>${lastName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.473" level="INFO">Typing text 'Kumar' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.471" endtime="20220104 20:33:44.623"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.470" endtime="20220104 20:33:44.623"/>
+</kw>
+<kw name="input emailid" library="RegistrationPageKeywords">
+<arg>${emailid1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.626" level="INFO">Typing text 'ba2rzxdh9@gmail.com' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.624" endtime="20220104 20:33:44.750"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.623" endtime="20220104 20:33:44.751"/>
+</kw>
+<kw name="input telephone" library="RegistrationPageKeywords">
+<arg>${telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.753" level="INFO">Typing text '9876456890' into text field 'id:input-telephone'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.753" endtime="20220104 20:33:44.848"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.752" endtime="20220104 20:33:44.850"/>
+</kw>
+<kw name="input password" library="RegistrationPageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.852" level="INFO">Typing text '1234' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.851" endtime="20220104 20:33:44.947"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.850" endtime="20220104 20:33:44.947"/>
+</kw>
+<kw name="input confirm password" library="RegistrationPageKeywords">
+<arg>${confirmpwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword_confirm}</arg>
+<arg>${confirmpwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:44.948" level="INFO">Typing text '1234' into text field 'id:input-confirm'.</msg>
+<status status="PASS" starttime="20220104 20:33:44.948" endtime="20220104 20:33:45.039"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.947" endtime="20220104 20:33:45.039"/>
+</kw>
+<kw name="select subscribe radio button" library="RegistrationPageKeywords">
+<arg>1</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>newsletter</arg>
+<arg>${value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220104 20:33:45.041" level="INFO">Selecting '1' from radio button 'newsletter'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.040" endtime="20220104 20:33:45.110"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.039" endtime="20220104 20:33:45.111"/>
+</kw>
+<kw name="select privacy checkbox" library="RegistrationPageKeywords">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${chkbox_privacy}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.112" level="INFO">Selecting checkbox 'xpath://input[@type='checkbox'  and @name='agree']'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.112" endtime="20220104 20:33:45.198"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.111" endtime="20220104 20:33:45.199"/>
+</kw>
+<kw name="click continue button" library="RegistrationPageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btn_continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220104 20:33:45.202" level="INFO">Clicking element 'xpath://input[@type='submit'  and @value='Continue']'.</msg>
+<status status="PASS" starttime="20220104 20:33:45.201" endtime="20220104 20:33:47.547"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:45.199" endtime="20220104 20:33:47.548"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${success_element}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220104 20:33:47.548" endtime="20220104 20:33:47.564"/>
+</kw>
+<kw name="Verify successful registration" library="RegistrationPageKeywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your Account Has Been Created!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220104 20:33:47.579" level="INFO">Current page contains text 'Your Account Has Been Created!'.</msg>
+<status status="PASS" starttime="20220104 20:33:47.565" endtime="20220104 20:33:47.579"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:47.565" endtime="20220104 20:33:47.579"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:44.340" endtime="20220104 20:33:47.580"/>
+</test>
+<kw name="close app" library="RegistrationPageKeywords" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220104 20:33:47.581" endtime="20220104 20:33:49.717"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:47.580" endtime="20220104 20:33:49.717"/>
+</kw>
+<status status="PASS" starttime="20220104 20:33:38.891" endtime="20220104 20:33:49.717"/>
+</suite>
+<status status="PASS" starttime="20220104 20:33:38.875" endtime="20220104 20:33:49.720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="RegistrationTest">Suites.RegistrationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
